@@ -11,7 +11,7 @@ public class Principal {
 
         System.out.println("Digite seu tipo de conta \n" +
                 "1) Conta corrente \n" +
-                "2) COnta poupança \n");
+                "2) Conta poupança \n");
         int opc = sc.nextInt();
 
         switch (opc) {
