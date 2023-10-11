@@ -1,6 +1,6 @@
-package HeloBank;
-
+import Class.*;
 import java.util.Scanner;
+
 
 public class Principal {
     public static void main(String[] args) {
