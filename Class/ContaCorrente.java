@@ -5,6 +5,7 @@ public class ContaCorrente extends Banco {
 
     public ContaCorrente(double saldo, String nomeTitular, int numeroConta) {
         super(saldo, nomeTitular, numeroConta);
+        super.informacoes();
         this.saldoAtualComposto = saldo;
     }
 

@@ -2,11 +2,12 @@ package Class;
 
 import java.util.Scanner;
 
-public class ContaPolpanca extends Banco {
+public class ContaPoupanca extends Banco {
     private double saldoAtual;
 
-    public ContaPolpanca(double saldo, String nomeTitular, int numeroConta) {
+    public ContaPoupanca(double saldo, String nomeTitular, int numeroConta) {
         super(saldo, nomeTitular, numeroConta);
+        super.informacoes();
         this.saldoAtual = saldo;
     }
 
@@ -61,7 +62,6 @@ public class ContaPolpanca extends Banco {
         } else {
             System.out.println("Taxa ou tempo inválido");
             return saldoAtual;
-
         }
     }
 

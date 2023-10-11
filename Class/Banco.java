@@ -1,4 +1,5 @@
 package Class;
+
 public class Banco {
     private double saldo;
     private String nomeTitular;
@@ -24,5 +25,13 @@ public class Banco {
 
     public int getNumeroConta() {
         return numeroConta;
+    }
+
+    public void informacoes() {
+        System.out.println("\t=================\n" +
+                "\sTitular da conta: " + nomeTitular + "\n" +
+                "\sSaldo disponivel: R$" + saldo + "\n" +
+                "\sNúmero da Conta: " + numeroConta + "\n" +
+                "\t=================\n");
     }
 }

@@ -6,6 +6,7 @@ public class Principal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String nome;
+        double valor;
         System.out.println("=== Seja bem vindo ao HeloBank ===");
 
         System.out.println("Digite seu tipo de conta \n" +
@@ -21,9 +22,9 @@ public class Principal {
 
                 
                 System.out.println("Digite o seu saldo: ");
-                double valor = sc.nextDouble();
+                valor = sc.nextDouble();
 
-                ContaCorrente user = new ContaCorrente(valor, nome, 0);
+                ContaCorrente user = new ContaCorrente(valor, nome, 1100);
                 user.cobrarTaxa(valor);
                 user.resultado();
                 break;
@@ -32,7 +33,11 @@ public class Principal {
                 System.out.println("\n Conta poupança selecionada...");
                 System.out.println("Digite o nome do titular");
                 nome = sc.next();
-                ContaPolpanca userPolpanca = new ContaPolpanca(1000, nome, 0);
+
+                System.out.println("Digite o seu saldo: ");
+                valor = sc.nextDouble();
+
+                ContaPoupanca userPolpanca = new ContaPoupanca(valor, nome, 1010);
 
                 userPolpanca.Poupanca();
 
